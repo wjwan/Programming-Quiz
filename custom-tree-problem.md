@@ -1,5 +1,5 @@
 The puzzle is got from (http://www.geeksforgeeks.org/custom-tree-problem/)
-
+```c++
 void customPrint(vector<pair<char,char> > pairs){
     int position[26];
     memset(position,-1,sizeof(int)*26);
@@ -38,3 +38,4 @@ void customPrint(vector<pair<char,char> > pairs){
         last.pop();
     }
 }
+```
