@@ -7,6 +7,7 @@ previous pointer and right means next pointer.
 
 
 Let the following be input binary tree
+```
         1
      /     \
     2       3
@@ -14,22 +15,23 @@ Let the following be input binary tree
   4   5       6
  / \         / \
 7   8       9   10
-
+```
 
 Output:
 Doubly Linked List
 7<->8<->5<->9<->10
 
 Modified Tree:
+```
         1
      /     \
     2       3
    /         \
   4           6
-  
+```  
   
 Got from(http://www.geeksforgeeks.org/connect-leaves-doubly-linked-list/)
-
+```c++
 void leavesToList(TreeNode* root, TreeNode* &left, TreeNode* &right){
     
     if(root->left==NULL && root->right==NULL){
@@ -61,3 +63,4 @@ void leavesToList(TreeNode* root, TreeNode* &left, TreeNode* &right){
     else
         right = lRight;
 }
+```
