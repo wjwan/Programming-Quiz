@@ -14,7 +14,7 @@ Extra：这两个问题的implementation的Big-O
 下个人没法flip了这个人就赢；all possible moves for next flip
 
 http://www.1point3acres.com/bbs/thread-137928-1-1.html
-
+```c++
 vector<string> allPossibleFlips(string currState){
     int size = currState.length();
     vector<string> result;
@@ -96,3 +96,4 @@ bool ifCanWinAllSteps(string currState, int count){
         return false;
     }
 }
+```
