@@ -1,6 +1,7 @@
 Boundary Traversal of binary tree
-Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root. For example, boundary traversal of the following tree is “20 8 4 10 14 25 22″
+Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise starting from the root. For example, boundary traversal of the following tree is "20 8 4 10 14 25 22"
 
+```
 		20
 	   /  \
 	 8     22
@@ -8,7 +9,7 @@ Given a binary tree, print boundary nodes of the binary tree Anti-Clockwise star
    4    12    25
        /  \  
       10  14
-
+```
 
 We break the problem in 3 parts:
 1. Print the left boundary in top-down manner.
