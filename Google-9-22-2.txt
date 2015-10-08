@@ -6,6 +6,7 @@ First we go through the two strings from the beginning to the end. Store the dif
 3. no need to swap
 we could check those three kind of swaps
 
+```c++
 vector<int> getSwap(string s1, string s2){
     int len1 = s1.length();
     int len2 = s2.length();
@@ -67,3 +68,4 @@ vector<int> getSwap(string s1, string s2){
         return tmpResult;
     
 }
+```
