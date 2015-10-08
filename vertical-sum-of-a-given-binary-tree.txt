@@ -1,5 +1,5 @@
 Given a Binary Tree, find vertical sum of the nodes that are in same vertical line. Print all sums through different vertical lines.
-
+```
 Examples:
 
       1
@@ -7,6 +7,7 @@ Examples:
   2      3
  / \    / \
 4   5  6   7
+```
 The tree has 5 vertical lines
 
 Vertical-Line-1 has only one node 4 => vertical sum is 4
@@ -22,6 +23,7 @@ So expected output is 4, 2, 12, 3 and 7
 
 I want to make a double linked list and store the sums into that linked list
 
+```c++
 struct LinkNode{
     int val;
     LinkNode* left;
@@ -98,3 +100,4 @@ int main(){
     cout << endl;
     return 0;
 }
+```
