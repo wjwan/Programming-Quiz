@@ -1,6 +1,6 @@
 Check if all leaves are at same level
 Given a Binary Tree, check if all leaves are at same level or not.
-
+```
           12
         /    \
       5       7       
@@ -24,7 +24,8 @@ Given a Binary Tree, check if all leaves are at same level or not.
   /      /
  1      2
  Leaves are at same level
- 
+ ```
+ ```c++
  Puzzle got from(http://www.geeksforgeeks.org/check-leaves-level/)
  
  bool checkAllLeaves(TreeNode *root, int level, int &allLevel){
@@ -45,3 +46,4 @@ Given a Binary Tree, check if all leaves are at same level or not.
  		}
  	}
  }
+ ```
