@@ -5,7 +5,7 @@ all valid interpretations of input array.
 Puzzle got from(http://www.geeksforgeeks.org/find-all-possible-interpretations/)
 
 Examples
-
+```
 Input: {1, 1}
 Output: ("aa", 'k") 
 [2 interpretations: aa(1, 1), k(11)]
@@ -17,7 +17,8 @@ Output: ("aba", "au", "la")
 Input: {9, 1, 8}
 Output: {"iah", "ir"} 
 [2 interpretations: iah(9,1,8), ir(9,18)]
-
+```
+```c++
 vector<string> getAllPossibleInterpretations(vector<int> nums){
     int size = nums.size();
     vector<string> result;
@@ -51,6 +52,6 @@ vector<string> getAllPossibleInterpretations(vector<int> nums){
     
     return DP[(size-1)%3];
 }
-
+```
 Time O(N)
 Space O(N)
