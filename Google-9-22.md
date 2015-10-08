@@ -12,6 +12,7 @@
 两层循环，外循环iterate from 0～x，表示上面x盏灯，下面n-x盏灯
 内层循环则将所有亮灯的可能存在数组里，然后cross join两个数组
 
+```c++
 vector<string> tool(int n, int m);
 
 vector<string> getAllPossibleTime(int n){
@@ -70,3 +71,4 @@ vector<string> tool(int n, int m){
     }
     return result;
 }
+```
