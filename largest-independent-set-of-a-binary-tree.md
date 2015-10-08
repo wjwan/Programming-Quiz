@@ -6,9 +6,10 @@ Two cases:
 1. the current node is included and all its children will not be included. All its grandchildren will be included.
 2. the current node is not included. Its children is included.
 
-LISS(X) = MAX{(1 + sum of LISS for all grandchildren of x)
-			  (sum of LISS for all children of x)}
-			  
+`LISS(X) = MAX{(1 + sum of LISS for all grandchildren of x)
+			  (sum of LISS for all children of x)}`
+
+```c++			  
 int getLISS(TreeNode *root){
 	if(root==NULL)
 		return 0;
@@ -26,3 +27,4 @@ int getLISS(TreeNode *root){
 	int grandChildren = getLISS(root->left->left)+getLISS(root->left->right)+getLISS(root->right->left)+getLISS(root->right->right);
 	return max(children,1+grandChildren);
 }
+```
