@@ -1,5 +1,6 @@
-package MyPackage;
 ```java
+package MyPackage;
+
 class MyThread implements Runnable{
     String message;
     public MyThread(){
