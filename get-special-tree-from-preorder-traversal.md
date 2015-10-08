@@ -3,6 +3,7 @@ Given an array ‘pre[]’ that represents Preorder traversal of a spacial binar
 
 Source: Amazon Interview Question
 
+```
 Example:
 
 Input:  pre[] = {10, 30, 20, 5, 15},  preLN[] = {'N', 'N', 'L', 'L', 'L'}
@@ -12,11 +13,11 @@ Output: Root of following tree
         30   15
        /  \
       20   5
-      
+```
       
 (This puzzle is got from http://www.geeksforgeeks.org/construct-a-special-tree-from-given-preorder-traversal/)
 
-
+```c++
 TreeNode* getSpecialTreeFromPreorderTraversal(int pre[], char preLN[], int size){
 	TreeNode* root = NULL;
 	if(size==0)
@@ -46,3 +47,4 @@ TreeNode* getSpecialTreeFromPreorderTraversal(int pre[], char preLN[], int size)
 	}
 	return root;
 }
+```
