@@ -19,6 +19,7 @@ We break the problem in 3 parts:
 
 (This problem is got from http://www.geeksforgeeks.org/boundary-traversal-of-binary-tree/)
 
+```c++
 void leafTraversal(TreeNode *root){
     if(root->left==NULL&&root->right==NULL){
         cout << root->val << " ";
@@ -56,3 +57,4 @@ void boundaryTraversal(TreeNode *root){
     }
     
 }
+```
