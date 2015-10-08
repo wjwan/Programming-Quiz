@@ -14,13 +14,14 @@ the current node unless we traverse the list.
 
 The complete tree is stored in the linked list by level traversal order
 10->12->15->25->30->36
-
+```
 		 10
 		/    \
 	  12	   15
     /   \      /
   25	 30   36
-  
+```
+```c++
 TreeNode* getTree(ListNode *head){
     ListNode *p = head;
     queue<TreeNode*> nodeQueue;
@@ -43,3 +44,4 @@ TreeNode* getTree(ListNode *head){
     }
     return root;
 }
+```
